@@ -1,2 +1,5 @@
-# Dice-Simul
-A Program which works as a dice simulator.
+# Dice Roller
+A Program which rolls the dice for you.
+# What I Learnt
+Use of random module.
+Manipulation of lists & variable

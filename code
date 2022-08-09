@@ -1,0 +1,21 @@
+import tkinter
+from tkinter import *
+import random
+
+w = Tk()
+w.title('dice roller')
+w.geometry("600x600")
+label = Label(w, font=("Times", 300, "bold"), fg="#f0e68c", text="",)
+
+
+def rolldice():
+    dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
+    color=['#66BFBF','#A6D1E6','#FF0063','#FFB562','#5FD068']
+    label.configure(text=f'{random.choice(dice)}',fg=random.choice(color))
+    label.pack()
+
+
+b = Button(w, font=("Helvetica", 30, "bold"), fg="black",activebackground='green',activeforeground='cyan',text="Roll the dice!", command=rolldice,borderwidth=0)
+b.pack()
+
+w.mainloop()

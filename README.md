@@ -1,2 +1,2 @@
-# DIce-Simul
+# Dice-Simul
 A Program which works as a dice simulator.
